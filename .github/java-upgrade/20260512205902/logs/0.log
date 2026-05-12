@@ -1,0 +1,291 @@
+2026-05-12T20:59:02.853Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-05-12T20:59:02.855Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: auto, input: {
+  "sessionId": "",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos"
+}}).
+2026-05-12T20:59:02.855Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T20:59:02.882Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 25.0.3\n   📁 Path: C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.3.9-hotspot\\bin\n   🏷️ Source: PATH\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-05-12T20:59:02.883Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-05-12T20:59:05.420Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T20:59:05.422Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "status": "succeeded"
+}}).
+2026-05-12T20:59:05.422Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T20:59:05.426Z [INFO] Project c:\Users\jarde\Desktop\Projetos\monitor_investimentos is not a maven project, try to get java version from gradle
+2026-05-12T20:59:05.468Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T20:59:05.468Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T20:59:05.493Z [INFO] Try to get java version from gradle config files: 
+2026-05-12T20:59:05.493Z [INFO] Try to get java version from gradle properties: undefined
+2026-05-12T20:59:05.494Z [INFO] Project java version: 8
+2026-05-12T20:59:05.518Z [WARN] [ReportEventTool] Full project info unavailable, attempting lightweight fallback: UserError: Failed to detect build tool for the project at c:\Users\jarde\Desktop\Projetos\monitor_investimentos. There are child Maven/Gradle projects detected: "monitor_investimentos". Would you like to use one of them instead?
+2026-05-12T20:59:05.523Z [INFO] Project c:\Users\jarde\Desktop\Projetos\monitor_investimentos is not a maven project, try to get java version from gradle
+2026-05-12T20:59:05.575Z [INFO] Try to get java version from gradle config files: 
+2026-05-12T20:59:05.576Z [INFO] Try to get java version from gradle properties: undefined
+2026-05-12T20:59:07.836Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T20:59:07.836Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T20:59:07.837Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T20:59:07.837Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T20:59:07.837Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T20:59:07.879Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T20:59:07.879Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T20:59:07.880Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T20:59:07.881Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T20:59:07.881Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T20:59:13.067Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-05-12T20:59:13.067Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260512205902"
+}}).
+2026-05-12T20:59:13.067Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T20:59:13.068Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-05-12T20:59:13.068Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-05-12T20:59:13.115Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-05-12T20:59:13.115Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: auto, input: {
+  "sessionId": "20260512205902"
+}}).
+2026-05-12T20:59:13.116Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T20:59:13.120Z [INFO] [Tool.invoke]({result: {
+  "message": "No Maven installations found."
+}}).
+2026-05-12T20:59:13.120Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-05-12T20:59:55.385Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T20:59:55.386Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T20:59:55.386Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T20:59:55.386Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T20:59:55.387Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T20:59:55.426Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T20:59:55.426Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T20:59:55.427Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T20:59:55.429Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T20:59:55.429Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:00:14.059Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-05-12T21:00:14.059Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260512205902"
+}}).
+2026-05-12T21:00:14.060Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:00:14.062Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///c:/Users/jarde/Desktop/Projetos/monitor_investimentos/.github/java-upgrade/20260512205902/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///c:/Users/jarde/Desktop/Projetos/monitor_investimentos/.github/java-upgrade/20260512205902/plan.md) directly."
+  }
+}}).
+2026-05-12T21:00:14.062Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-05-12T21:00:24.127Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-05-12T21:00:24.127Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, modelId: auto, input: {
+  "sessionId": "20260512205902"
+}}).
+2026-05-12T21:00:24.128Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:00:24.128Z [INFO] Upgrade plan confirmed successfully.
+2026-05-12T21:00:24.133Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902\\progress.md."
+}}).
+2026-05-12T21:00:24.133Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-05-12T21:00:34.316Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:00:34.317Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:00:34.317Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:00:34.317Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:00:34.318Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:00:34.365Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:00:34.365Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:00:34.366Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:00:34.367Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planConfirmed' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:00:34.367Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:02:23.204Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:02:23.204Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:02:23.206Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:02:23.206Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:02:23.207Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:02:23.251Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:02:23.252Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:02:23.252Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:02:23.376Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:02:23.377Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:06:51.361Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:06:51.361Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:06:51.362Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:06:51.362Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:06:51.362Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:06:51.429Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:06:51.429Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:06:51.430Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:06:51.430Z [INFO] Project c:\Users\jarde\Desktop\Projetos\monitor_investimentos is not a maven project, try to get java version from gradle
+2026-05-12T21:06:51.432Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:06:51.433Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:06:51.527Z [INFO] Try to get java version from gradle config files: 
+2026-05-12T21:06:51.527Z [INFO] Try to get java version from gradle properties: undefined
+2026-05-12T21:06:51.527Z [INFO] Project java version: 8
+2026-05-12T21:06:51.567Z [WARN] [ReportEventTool] Full project info unavailable, attempting lightweight fallback: UserError: Failed to detect build tool for the project at c:\Users\jarde\Desktop\Projetos\monitor_investimentos. There are child Maven/Gradle projects detected: "monitor_investimentos". Would you like to use one of them instead?
+2026-05-12T21:06:51.569Z [INFO] Project c:\Users\jarde\Desktop\Projetos\monitor_investimentos is not a maven project, try to get java version from gradle
+2026-05-12T21:06:51.592Z [INFO] Try to get java version from gradle config files: 
+2026-05-12T21:06:51.592Z [INFO] Try to get java version from gradle properties: undefined
+2026-05-12T21:07:02.918Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:07:02.918Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "skipped"
+}}).
+2026-05-12T21:07:02.918Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:07:02.919Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:07:02.919Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:07:02.962Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:07:02.963Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "skipped"
+}}).
+2026-05-12T21:07:02.963Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:07:02.964Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:07:02.964Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:07:30.091Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:07:30.106Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:07:30.106Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:07:30.107Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:07:30.107Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:07:30.175Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:07:30.175Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:07:30.175Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:07:30.176Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:07:30.177Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:07:31.499Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-12T21:07:31.499Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:07:31.499Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-12T21:07:31.500Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-12T21:07:31.500Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-12T21:07:31.589Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-12T21:07:31.590Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "event": "buildCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\monitor_investimentos",
+  "sessionId": "20260512205902",
+  "status": "succeeded"
+}}).
+2026-05-12T21:07:31.590Z [INFO] [Tool.invoke] do invoke.
+2026-05-12T21:07:31.591Z [INFO] Project c:\Users\jarde\Desktop\Projetos\monitor_investimentos is not a maven project, try to get java version from gradle
+2026-05-12T21:07:31.594Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'buildCompleted' reported!\nSession ID: 20260512205902,\nSession Dir: c:\\Users\\jarde\\Desktop\\Projetos\\monitor_investimentos\\.github\\java-upgrade\\20260512205902"
+}}).
+2026-05-12T21:07:31.594Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-12T21:07:31.703Z [INFO] Try to get java version from gradle config files: 
+2026-05-12T21:07:31.706Z [INFO] Try to get java version from gradle properties: undefined
+2026-05-12T21:07:31.706Z [INFO] Project java version: 8
