@@ -2,6 +2,7 @@ package com.projeto.financeiro.monitor_investimentos.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tb_ativos")
@@ -14,4 +15,7 @@ public class Ativo {
     private String ticker;
     private String nome;
     private String tipo;
+    private Integer quantidade;
+    private BigDecimal precoCompra;
+    private BigDecimal valorTotal;
 }

@@ -5,6 +5,7 @@ import com.projeto.financeiro.monitor_investimentos.repository.AtivoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -19,9 +20,38 @@ public class AtivoController {
         return repository.findAll();
     }
 
-    // ADICIONE ESTE BLOCO ABAIXO:
     @PostMapping
-    public Ativo salvar(@RequestBody Ativo ativo) {
-        return repository.save(ativo);
+    public Ativo cadastrar(@RequestBody Ativo ativo) {
+    // Cálculo: Total = Preço de Compra * Quantidade
+    if (ativo.getPrecoCompra() != null && ativo.getQuantidade() != null) {
+        BigDecimal total = ativo.getPrecoCompra().multiply(new BigDecimal(ativo.getQuantidade()));
+        ativo.setValorTotal(total);
     }
+    return repository.save(ativo);
+}
+
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Long id) {
+     repository.deleteById(id);
+}
+
+@PutMapping("/{id}")
+public Ativo atualizar(@PathVariable Long id, @RequestBody Ativo ativoAtualizado) {
+    return repository.findById(id).map(ativo -> {
+        ativo.setNome(ativoAtualizado.getNome());
+        ativo.setTicker(ativoAtualizado.getTicker());
+        ativo.setTipo(ativoAtualizado.getTipo());
+        ativo.setQuantidade(ativoAtualizado.getQuantidade());
+        ativo.setPrecoCompra(ativoAtualizado.getPrecoCompra());
+        
+        // Recalcula o valor total com os novos dados
+        if (ativo.getPrecoCompra() != null && ativo.getQuantidade() != null) {
+            BigDecimal total = ativo.getPrecoCompra().multiply(new BigDecimal(ativo.getQuantidade()));
+            ativo.setValorTotal(total);
+        }
+        
+        return repository.save(ativo);
+    }).orElseThrow(() -> new RuntimeException("Ativo não encontrado com o id " + id));
+}
+
 }
