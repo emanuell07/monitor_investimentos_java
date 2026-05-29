@@ -1,11 +1,11 @@
 package com.projeto.financeiro.monitor_investimentos.controller;
 
-import com.projeto.financeiro.monitor_investimentos.model.Ativo;
-import com.projeto.financeiro.monitor_investimentos.repository.AtivoRepository;
+import com.projeto.financeiro.monitor_investimentos.dto.AtivoRequestDTO;
+import com.projeto.financeiro.monitor_investimentos.dto.AtivoResponseDTO;
+import com.projeto.financeiro.monitor_investimentos.service.AtivoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -13,45 +13,30 @@ import java.util.List;
 public class AtivoController {
 
     @Autowired
-    private AtivoRepository repository;
+    private AtivoService service;
 
     @GetMapping
-    public List<Ativo> listarTodos() {
-        return repository.findAll();
+    public List<AtivoResponseDTO> listarTodos() {
+        return service.listarTodos();
+    }
+
+    @GetMapping("/{id}")
+    public AtivoResponseDTO buscarPorId(@PathVariable Long id) {
+    return service.buscarPorId(id);
     }
 
     @PostMapping
-    public Ativo cadastrar(@RequestBody Ativo ativo) {
-    // Cálculo: Total = Preço de Compra * Quantidade
-    if (ativo.getPrecoCompra() != null && ativo.getQuantidade() != null) {
-        BigDecimal total = ativo.getPrecoCompra().multiply(new BigDecimal(ativo.getQuantidade()));
-        ativo.setValorTotal(total);
+    public AtivoResponseDTO cadastrar(@RequestBody AtivoRequestDTO dto) {
+        return service.cadastrar(dto);
     }
-    return repository.save(ativo);
-}
+
+    @PutMapping("/{id}")
+    public AtivoResponseDTO atualizar(@PathVariable Long id, @RequestBody AtivoRequestDTO dto) {
+        return service.atualizar(id, dto);
+    }
 
     @DeleteMapping("/{id}")
     public void deletar(@PathVariable Long id) {
-     repository.deleteById(id);
-}
-
-@PutMapping("/{id}")
-public Ativo atualizar(@PathVariable Long id, @RequestBody Ativo ativoAtualizado) {
-    return repository.findById(id).map(ativo -> {
-        ativo.setNome(ativoAtualizado.getNome());
-        ativo.setTicker(ativoAtualizado.getTicker());
-        ativo.setTipo(ativoAtualizado.getTipo());
-        ativo.setQuantidade(ativoAtualizado.getQuantidade());
-        ativo.setPrecoCompra(ativoAtualizado.getPrecoCompra());
-        
-        // Recalcula o valor total com os novos dados
-        if (ativo.getPrecoCompra() != null && ativo.getQuantidade() != null) {
-            BigDecimal total = ativo.getPrecoCompra().multiply(new BigDecimal(ativo.getQuantidade()));
-            ativo.setValorTotal(total);
-        }
-        
-        return repository.save(ativo);
-    }).orElseThrow(() -> new RuntimeException("Ativo não encontrado com o id " + id));
-}
-
+        service.deletar(id);
+    }
 }
